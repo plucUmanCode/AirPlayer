@@ -1,0 +1,7 @@
+{
+  "name": "com.airplayer.core",
+  "version": "0.1.0",
+  "displayName": "AirPlayer Core",
+  "description": "Pure C# core shared between the Quest app and the PC companion: OSC serialization, AirPlayer protocol, connection state machine, mDNS discovery.",
+  "unity": "6000.0"
+}
