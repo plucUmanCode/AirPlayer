@@ -65,4 +65,4 @@ dotnet run --project src/AirPlayer.Companion
 
 Le compagnon logge son IP locale, l'écoute OSC sur udp/9000 et l'annonce mDNS. Autoriser l'app dans le pare-feu Windows (réseau **privé**) à la première exécution — ports UDP 9000 et 5353 entrants.
 
-Ensuite dérouler `docs/loop0-checklist.md`.
+Ensuite, pour tester : `docs/loop0-test-unity.md` (Play Mode éditeur, Quest Link, APK + dépannage), puis dérouler `docs/loop0-checklist.md`.
