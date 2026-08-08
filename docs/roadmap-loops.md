@@ -11,7 +11,7 @@ Format : Objectif → Livrables → Critères d'acceptation (CA) → Tests.
 **Objectif** : les deux projets compilent, le casque et le PC se parlent.
 
 **Livrables**
-- Monorepo initialisé : `quest-app/` (Unity 6, Meta XR SDK configuré, build APK qui se lance sur Quest), `companion/` (.NET 8 console).
+- Monorepo initialisé : `quest-app/` (Unity 6, Meta XR SDK configuré, build APK qui se lance sur Quest), `companion/` (.NET 10 console).
 - Découverte mDNS + fallback IP manuelle.
 - Handshake `/airplayer/hello` → `/airplayer/welcome`, heartbeat ping/pong.
 - Décisions documentées (ADR courts dans `docs/adr/`) : lib OSC, lib MIDI virtuel.

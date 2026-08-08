@@ -26,5 +26,5 @@ Contrôleur MIDI en réalité mixte pour Meta Quest 3S, piloté au **hand tracki
 - **Environnement** : réalité mixte (passthrough) par défaut, VR complète en option.
 - **Scope MVP** : pads + faders/knobs + contrôle session view Ableton.
 - **Transport** : OSC sur UDP entre Quest et app compagnon ; MIDI virtuel + AbletonOSC côté PC.
-- **Stack** : Unity 6 (Quest), .NET 8 (compagnon Windows), AbletonOSC (Remote Script Python, open source).
+- **Stack** : Unity 6 (Quest), .NET 10 (compagnon Windows), AbletonOSC (Remote Script Python, open source).
 - **Input** : hand tracking seulement pour le MVP (manettes hors scope).

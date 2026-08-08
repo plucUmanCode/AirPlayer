@@ -5,7 +5,7 @@
 
 ## Contexte
 
-Le casque et le compagnon échangent tout leur trafic en OSC sur UDP. Il faut une implémentation utilisable des deux côtés : compilable par Unity 6 (netstandard 2.1, C# 9) et par .NET 8, testable en xUnit, et sans allocation dans le chemin chaud input→réseau (règle CLAUDE.md, critique pour la Loop 1).
+Le casque et le compagnon échangent tout leur trafic en OSC sur UDP. Il faut une implémentation utilisable des deux côtés : compilable par Unity 6 (netstandard 2.1, C# 9) et par .NET 10, testable en xUnit, et sans allocation dans le chemin chaud input→réseau (règle CLAUDE.md, critique pour la Loop 1).
 
 ## Décision
 
@@ -14,7 +14,7 @@ Implémentation maison minimale dans `shared/AirPlayer.Core/Osc/` : `OscWriter`,
 ## Alternatives considérées
 
 - **Rug.Osc** : mature, mais plus maintenue depuis des années, pensée .NET Framework, API orientée objets alloués — pas de contrôle zéro-alloc, et il faudrait l'embarquer dans Unity à la main.
-- **OscCore / extOSC (Unity)** : bien pour Unity, mais inutilisables côté compagnon .NET 8 → deux implémentations à maintenir, deux comportements à tester.
+- **OscCore / extOSC (Unity)** : bien pour Unity, mais inutilisables côté compagnon .NET 10 → deux implémentations à maintenir, deux comportements à tester.
 - **OSC via lib côté compagnon + maison côté Unity** : casse la symétrie ; un seul code partagé élimine toute une classe de bugs d'interop.
 
 ## Conséquences

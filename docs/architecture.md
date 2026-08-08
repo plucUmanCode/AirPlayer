@@ -7,7 +7,7 @@
 │  QUEST 3S (Unity 6)     │                              │  PC WINDOWS                  │
 │                         │  OSC :9000 (notes, CC,       │                              │
 │  Hand tracking          │ ───────── commandes) ──────► │  ┌────────────────────────┐  │
-│  (Interaction SDK)      │                              │  │ Compagnon .NET 8       │  │
+│  (Interaction SDK)      │                              │  │ Compagnon .NET 10      │  │
 │        │                │  OSC :9001 (états session,   │  │                        │  │
 │  Modules UI 3D          │ ◄──────── heartbeat) ─────── │  │  OSC ⇄ MIDI virtuel ───┼──┼─► loopMIDI ─► Ableton
 │  (pads, faders,         │                              │  │  OSC ⇄ AbletonOSC      │  │              (input MIDI)
@@ -25,7 +25,7 @@
 Trois processus, deux machines :
 
 1. **App Quest (Unity 6)** — rendu MR, hand tracking, envoi/réception OSC.
-2. **Compagnon (.NET 8)** — hub sur le PC. Convertit l'OSC du casque en MIDI virtuel (notes/CC) et relaie l'état du session view depuis AbletonOSC vers le casque.
+2. **Compagnon (.NET 10)** — hub sur le PC. Convertit l'OSC du casque en MIDI virtuel (notes/CC) et relaie l'état du session view depuis AbletonOSC vers le casque.
 3. **AbletonOSC** — Remote Script open source installé dans Ableton Live. Expose le Live Object Model en OSC sur localhost (clips, tracks, scènes, états de lecture).
 
 ## Pourquoi ce design
@@ -94,7 +94,7 @@ mDNS : le compagnon annonce `_airplayer._udp.local`. Le casque liste les compagn
 - OSC : sérialisation maison (le format OSC est simple) ou lib légère — décision en Loop 0
 
 ### Compagnon
-- .NET 8, console d'abord (tray app Windows en Loop 5)
+- .NET 10, console d'abord (tray app Windows en Loop 5)
 - MIDI virtuel : DryWetMIDI + loopMIDI installé par l'utilisateur, OU teVirtualMIDI (port créé par programme, mais licence à vérifier pour distribution). Décision en Loop 0 avec justification écrite.
 - OSC : Rug.Osc ou maison
 

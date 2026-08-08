@@ -55,7 +55,7 @@ Lancer l'app depuis la bibliothèque du casque (catégorie « Sources inconnues 
 
 ## 6. Compagnon côté PC
 
-Sur le PC Windows (avec le SDK .NET 8 installé) :
+Sur le PC Windows (avec le SDK .NET 10 installé) :
 
 ```
 cd companion
