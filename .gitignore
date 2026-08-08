@@ -1,0 +1,39 @@
+# ===== Unity (quest-app/) =====
+quest-app/[Ll]ibrary/
+quest-app/[Tt]emp/
+quest-app/[Oo]bj/
+quest-app/[Bb]uild/
+quest-app/[Bb]uilds/
+quest-app/[Ll]ogs/
+quest-app/[Uu]ser[Ss]ettings/
+quest-app/[Mm]emoryCaptures/
+quest-app/*.apk
+quest-app/*.aab
+quest-app/*.unitypackage
+quest-app/crashlytics-build.properties
+*.csproj.user
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+sysinfo.txt
+
+# ===== .NET (companion/) =====
+companion/**/bin/
+companion/**/obj/
+companion/**/*.user
+companion/**/TestResults/
+*.suo
+
+# ===== IDE =====
+.vs/
+.vscode/
+.idea/
+*.swp
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Divers =====
+*.log
+.env
