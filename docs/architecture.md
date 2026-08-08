@@ -67,6 +67,7 @@ Mitigation de la latence de détection : déclencher la note sur **prédiction d
 
 ```
 /airplayer/welcome        (string companionVersion, bool abletonConnected)
+/airplayer/incompatible   (int requiredVersion)   # réponse à un hello de version incompatible
 /airplayer/pong           (int seq)
 /airplayer/session/grid   (int tracks, int scenes)                    # dimensions
 /airplayer/clip/state     (int track, int scene, int state, int rgb)  # state: 0=vide 1=arrêté 2=en lecture 3=déclenché
