@@ -1,0 +1,16 @@
+{
+    "name": "AirPlayer.Runtime",
+    "rootNamespace": "AirPlayer.Runtime",
+    "references": [
+        "AirPlayer.Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
