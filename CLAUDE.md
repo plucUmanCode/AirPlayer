@@ -53,7 +53,7 @@ docs/             # Vision, architecture, roadmap
 
 ## État actuel
 
-- [ ] Loop 0 — Fondations — **code livré, validation humaine en attente** (`docs/loop0-checklist.md`). Fait : core partagé `shared/AirPlayer.Core` (OSC maison, protocole v1, machine à états de connexion, mDNS maison), compagnon .NET 10 (handshake, heartbeat, annonce mDNS), scripts Unity (transport threadé, découverte, HUD, IP manuelle), ADRs 001–003, tests xUnit. Reste : assembler la scène dans l'éditeur (`docs/loop0-unity-setup.md`), builder l'APK, dérouler la checklist, exécuter `dotnet test` sur le PC (impossible dans l'environnement distant, réseau NuGet bloqué). Écarts : ajout de `/airplayer/incompatible` au protocole ; mDNS implémenté maison plutôt qu'une lib (ADR 003) ; réponses mDNS unicast (bit QU) pour Android.
+- [ ] Loop 0 — Fondations — **code livré, validation humaine en attente** (`docs/loop0-checklist.md`). Fait : core partagé `shared/AirPlayer.Core` (OSC maison, protocole v1, machine à états de connexion, mDNS maison), compagnon .NET 10 (handshake, heartbeat, annonce mDNS), scripts Unity (transport threadé, découverte, HUD, IP manuelle), ADRs 001–003, tests xUnit. Reste : assembler la scène dans l'éditeur (`docs/loop0-unity-setup.md`), passer le pré-vol (`docs/loop0-preflight.md`, portes G1→G6), builder l'APK, dérouler la checklist, exécuter `dotnet test` sur le PC (impossible dans l'environnement distant, réseau NuGet bloqué). Écarts : ajout de `/airplayer/incompatible` au protocole ; mDNS implémenté maison plutôt qu'une lib (ADR 003) ; réponses mDNS unicast (bit QU) pour Android.
 - [ ] Loop 1 — Pads → notes MIDI
 - [ ] Loop 2 — Faders/knobs → CC
 - [ ] Loop 3 — Session view

@@ -1,6 +1,6 @@
 # Loop 0 — Checklist de validation manuelle
 
-Prérequis : `docs/loop0-unity-setup.md` déroulé (APK installé, compagnon lancé), casque et PC sur le même réseau Wi-Fi (idéalement 5 GHz, même routeur).
+Prérequis : `docs/loop0-unity-setup.md` déroulé (APK installé, compagnon lancé), **pré-vol `docs/loop0-preflight.md` vert (G1→G5)**, casque et PC sur le même réseau Wi-Fi (idéalement 5 GHz, même routeur).
 
 ## CA 1 — L'app démarre en passthrough
 
