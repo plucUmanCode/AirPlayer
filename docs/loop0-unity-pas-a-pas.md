@@ -30,7 +30,10 @@ Plan : A. Installer Unity → B. Préparer le casque → C. Ouvrir le projet →
 1. Assure-toi d'avoir la dernière version du repo : `git pull` dans ton dossier AirPlayer.
 2. Unity Hub → onglet **Projects** → **Add** → **Add project from disk** → sélectionne le dossier **`quest-app`** (bien le sous-dossier, pas la racine du repo).
 3. Clique sur le projet pour l'ouvrir. Si le Hub signale que la version du projet (6000.0.32f1) diffère de la tienne, choisis ta version installée et confirme — c'est prévu, Unity mettra le projet à niveau.
-4. **Premier chargement long** (10-20 min) : Unity télécharge le SDK Meta XR et importe tout. Si des fenêtres du SDK Meta apparaissent (télémétrie, mises à jour), réponds ce que tu veux — sans impact.
+4. **Premier chargement long** (10-20 min) : Unity importe le projet. Il faut ensuite **installer le SDK Meta XR** (il n'est pas pré-installé) :
+   - Dans ton **navigateur** : https://assetstore.unity.com → cherche **« Meta XR All-in-One SDK »** (gratuit, éditeur Meta) → connecte-toi avec ton compte Unity ID → **Add to My Assets**.
+   - Dans Unity : **Window → Package Manager** → menu déroulant « Packages: » → **My Assets** → **Meta XR All-in-One SDK** → **Install** (gros téléchargement).
+   - Si des fenêtres du SDK Meta apparaissent (télémétrie, mises à jour), réponds ce que tu veux — sans impact. Le menu **Meta** doit apparaître dans la barre de menus à la fin.
 5. Repères de l'interface, tu n'as besoin que de ça :
    - **Hierarchy** (gauche) : la liste des objets de la scène.
    - **Scene / Game** (centre) : la vue 3D d'édition / ce que la caméra voit.

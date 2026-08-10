@@ -12,7 +12,7 @@ Le code C# du casque est livré dans le repo (`quest-app/Assets/AirPlayer/Runtim
 
 1. Unity Hub → **Add** → sélectionner le dossier `quest-app/`.
 2. Ouvrir avec ta version Unity 6 LTS (le fichier `ProjectSettings/ProjectVersion.txt` indique 6000.0.32f1 ; toute 6000.0.x plus récente convient, Unity mettra le fichier à jour).
-3. À l'ouverture, Unity résout les packages du `manifest.json`, dont le **Meta XR All-in-One SDK** via le registre scoped `npm.developer.oculus.com`. Si la version `78.0.0` n'existe plus, ouvre Window → Package Manager et prends la dernière version du package `com.meta.xr.sdk.all`.
+3. Installer le **Meta XR All-in-One SDK** (non épinglé dans le manifest, le registre npm de Meta étant capricieux) : dans un navigateur, Asset Store → « Meta XR All-in-One SDK » (gratuit, éditeur Meta) → **Add to My Assets** avec le même compte Unity ID, puis dans Unity : Window → Package Manager → « Packages: **My Assets** » → Meta XR All-in-One SDK → **Install**. Raccourci à tenter d'abord : Package Manager → « My Registries » → si la liste Meta XR s'affiche, installer le SDK directement de là.
 4. Vérifier que le package local **AirPlayer Core** apparaît dans Package Manager (In Project → AirPlayer Core). Les scripts `AirPlayer.Runtime` doivent compiler sans erreur.
 5. **Committer les fichiers `.meta`** générés par Unity au premier import (ils fixent les GUIDs des assets).
 
